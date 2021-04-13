@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+ul li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.wrapper{
+    max-width: 680px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+header, section#banner, footer, section#main-area div.box, section#main-area div.twitter-feed{
+ background: #c3c3c3;  
+}
+
+header a.logo{
+    font-size: 25px;
+    line-height: 52px;
+}
+
+header nav ul li, footer nav li{
+    display: inline-flex;
+    padding: 20px 5px;
+    margin: 0 5px;
+}
+
+section#banner{
+    padding: 10px 0 15px 0;
+}
+
+section#banner h1{
+    font-size: 43px;
+}
+
+section#banner p{
+    font-size: 20px;
+}
+
+section#banner section:first-of-type{
+    
+    /*! flex-grow: 1; */
+    width: 240px;
+}
+section#banner section:nth-of-type(2){
+    
+    flex-grow: 1;
+}
+section#banner section:nth-of-type(2) .slider-button{
+    position: absolute;
+    bottom: -58px;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    color: #c3c3c3;
+}
+
+section#banner section:nth-of-type(2) .slider-button ul{
+    text-align: right;
+    margin-right: 138px;
+}
+
+
+section#banner section:nth-of-type(2) .slider-button ul li{
+
+    display: inline-block;
+    font-size: 36px;
+    padding: 0 5px;
+    text-align: right;
+}
+section#banner .no-content{
+    width: 100%;
+    display: block;
+    background: gray;
+    height: 150px;
+    position: relative
+}
+section#banner .no-content span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#main-area{
+    padding-top: 35px;
+}
+
+section#main-area div.d-flex{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+section#main-area div.box{
+    height: 165px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 30px;
+    width: 16%;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+section#main-area div.twitter-feed{
+    /*! flex: 1 0 100%; */
+    padding: 20px;
+    margin: 20px 0;
+    width: 83%;
+    max-width: 670px;
+}
+
+footer span{
+    align-items: center;
+}
