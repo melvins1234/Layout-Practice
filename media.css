@@ -2,91 +2,91 @@
   header, footer {
     padding: 0 10px;
   }
-
   section#banner {
     padding: 10px 10px 15px 10px;
   }
-
   section#banner p {
     font-size: 17px;
   }
-
   section#banner section:first-of-type {
     width: 203px;
   }
 }
+
 @media only screen and (max-width: 480px) {
   .d-flex {
-    flex-direction: column !important;
-    align-items: center;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   header nav, footer nav {
     width: 100%;
   }
-
-  header nav ul li, footer nav li {
+  header nav ul li, footer nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column !important;
-    align-items: center;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: 1px solid #000;
     margin: 5px 0;
     padding: 10px;
   }
-
   section#banner {
     padding: 35px 10px;
   }
-
   section#banner .d-flex {
-    flex-direction: column-reverse !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
   }
-
   section#banner section:nth-of-type(2) {
     position: relative;
     height: 295px;
   }
-
-  section#banner section:first-of-type, section#banner section:nth-of-type(2) {
+  section#banner section:first-of-type {
     width: 100%;
   }
-
+  section#banner section:nth-of-type(2) {
+    width: 100%;
+  }
   section#banner section:nth-of-type(2) .slider-button {
     bottom: -50px;
     color: #000;
     text-align: center;
   }
-
   section#banner section:nth-of-type(2) .slider-button ul {
     margin: 0;
     text-align: center;
   }
-
   section#main-area {
     padding: 35px 10px 20px;
     overflow: auto;
   }
-
   section#main-area div.box {
     width: 100%;
     margin: 0 0 10px;
     padding: 0;
   }
-
   section#main-area div.twitter-feed {
     width: 100%;
     padding: 20px 0;
     text-indent: 20px;
     margin: 20px auto;
   }
-
   footer {
-    padding: 20px 10px;
-  }
-
-  footer span {
-    padding: 10px 0;
+    padding: 20px 10px span;
+    padding-padding: 10px 0;
   }
 }
-
 /*# sourceMappingURL=media.css.map */
